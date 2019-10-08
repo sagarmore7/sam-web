@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+.bg {
+    width: 100%;
+    position: absolute;
+    top: -70%;
+    filter: brightness(50%);
+    z-index: -1;
+    
+}
+li,a,button{
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(0, 255, 128);
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+.logo{
+    cursor: pointer;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    /*position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
+.nav_link{
+    list-style: none;
+    float: left;
+    padding: 0 30px;
+}
+button{
+    background-color: rgb(0, 255, 128);
+    border-style: none;
+    color:rgb(0, 116, 58);
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+}
+button:hover{
+    background-color:rgb(0, 170, 85);
+    color: white;
+}
+ li > a:hover{
+    color: rgb(0, 238, 255); 
+    transition: all 0.1s ease-in;
+}
+a{
+    border-bottom: 40px;
+}
+section{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: flex-start;
+    width: 900px;
+    height: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-items: center;
+    background-color: white;
+    box-shadow: 4px 5px 12px black;
+}
+/*.abtme{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width:60%;
+    
+   transform: translate(-50%, -50%);
+   
+}*/
+.me{
+    margin-right: 100px;
+    margin: 30px;
+    left: 90px;
+    float: left;
+}
+.right h3{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    top:50px;
+    left:390px;
+    width: 590px;
+}
+.hello::before{
+        content: "";
+        position: absolute;
+        top: 50%;                         // half way down (vertical center).
+        margin-top: -15px;                // adjust position, arrow has a height of 30px. 
+        left:5%;
+        border: solid 10px transparent;
+        border-right-color: rgb(0, 255, 128);
+        z-index: -1;
+    
+}
+.hello{
+    position: absolute;
+    top:20px;
+    background-color: rgb(0, 255, 128);
+    font-size: 20px;
+    left:40%;
+    text-align: center;
+    border-radius: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    width:70px;
+}
+.pro{
+    position: absolute;
+    left: 44%;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    top: 25%;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .bg{
+        display: flex;
+        position: absolute;
+        width: 200%;
+        top: 0%;
+    }
+    .card{
+        flex-direction: column;
+        position: absolute;
+        width: 360px;
+        height:900px;
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%, -50%);
+    }
+    .right h3{
+        flex-direction: column;
+        position: absolute;
+        left: 10%;
+        top: 42%;
+       
+    }
+    .hello{
+        flex-direction: column;
+        position: absolute;
+        left: 10%;
+        top:38%;
+    }
+    .pro{
+        flex-direction: column;
+        position: absolute;
+        left: 10%;
+        top:50%;
+        padding-bottom: 10px;
+        border-bottom: 2px solid rgb(0, 255, 128);
+
+    }
+}
